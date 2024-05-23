@@ -1,4 +1,5 @@
-<img width="2304" alt="FigJam basics" src="https://github.com/Anshchauhanhub/Anshchauhanhub/assets/146896630/8bb2c312-4a37-4350-9335-9dc9a40bfd0d">
+
+<img width="2143" alt="FigJam basics 1234567" src="https://github.com/Anshchauhanhub/Anshchauhanhub/assets/146896630/8ffc4861-f688-4ead-9cd9-12d630d097ae">
 
 <h1 align="center">Hi 👋, I'm Ansh Chauahn</h1>
 <h3 align="center">A Passionate learner from India</h3>
@@ -17,7 +18,7 @@
 - 💬 Ask me about **C, C++, Python**
 
 - 📫 How to reach me **chauhanansh289@gmail.com**
--
+
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
