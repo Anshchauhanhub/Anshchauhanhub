@@ -1,6 +1,8 @@
+<img width="2304" alt="FigJam basics" src="https://github.com/Anshchauhanhub/Anshchauhanhub/assets/146896630/8bb2c312-4a37-4350-9335-9dc9a40bfd0d">
+
 <h1 align="center">Hi 👋, I'm Ansh Chauahn</h1>
 <h3 align="center">A Passionate learner from India</h3>
- <img align="right" alt="Coding" width="400" src="https://www.bing.com/images/search?view=detailV2&ccid=kbUTNQ5P&id=5611F34618C56A86EA629EF10087D346593A6FD3&thid=OIP.kbUTNQ5Pw-esY0-8yjb8JQHaEK&mediaurl=https%3a%2f%2fmedia1.giphy.com%2fmedia%2fRbDKaczqWovIugyJmW%2fgiphy.gif&exph=270&expw=480&q=aninmated+coinggif&simid=608041690519136651&FORM=IRPRST&ck=292B5FAE4C8D81C894A220784859FBEB&selectedIndex=0&itb=0&idpp=overlayview&ajaxhist=0&ajaxserp=0"
+ <img align="right" alt="Coding" width="400" src="https://media1.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif"
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=anshchauhanhub&label=Profile%20views&color=0e75b6&style=flat" alt="anshchauhanhub" /> </p>
 
