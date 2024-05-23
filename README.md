@@ -1,23 +1,21 @@
 <h1 align="center">Hi 👋, I'm Ansh Chauahn</h1>
-<h3 align="center">Passionate learner from India</h3>
+<h3 align="center">A Passionate learner from India</h3>
+ <img align="right" alt="Coding" width="400" src="https://www.bing.com/images/search?view=detailV2&ccid=kbUTNQ5P&id=5611F34618C56A86EA629EF10087D346593A6FD3&thid=OIP.kbUTNQ5Pw-esY0-8yjb8JQHaEK&mediaurl=https%3a%2f%2fmedia1.giphy.com%2fmedia%2fRbDKaczqWovIugyJmW%2fgiphy.gif&exph=270&expw=480&q=aninmated+coinggif&simid=608041690519136651&FORM=IRPRST&ck=292B5FAE4C8D81C894A220784859FBEB&selectedIndex=0&itb=0&idpp=overlayview&ajaxhist=0&ajaxserp=0"
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=anshchauhanhub&label=Profile%20views&color=0e75b6&style=flat" alt="anshchauhanhub" /> </p>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=anshchauhanhub" alt="anshchauhanhub" /></a> </p>
+
 
 - 🔭 I’m currently working on **Web development**
 
 - 🌱 I’m currently learning **Data Structure and Algorithm**
-
-- 👯 I’m looking to collaborate on **g**
 
 - 👨‍💻 All of my projects are available at [https://www.behance.net/AnshGFX](https://www.behance.net/AnshGFX)
 
 - 💬 Ask me about **C, C++, Python**
 
 - 📫 How to reach me **chauhanansh289@gmail.com**
-
-- 📄 Know about my experiences [https://www.linkedin.com/in/ansh-chauhan-a0b42a28b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app](https://www.linkedin.com/in/ansh-chauhan-a0b42a28b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
+-
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
