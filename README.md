@@ -13,7 +13,7 @@
 
 - 🌱 I’m currently learning **Data Structure and Algorithm**
 
-- 💬 Ask me about **C, C++, Python**
+- 💬 Ask me about **C, C++, Python*
 
 - 📫 How to reach me **chauhanansh289@gmail.com**
 
