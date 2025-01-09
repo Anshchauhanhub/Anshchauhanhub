@@ -13,8 +13,6 @@
 
 - 🌱 I’m currently learning **Data Structure and Algorithm**
 
-- 👨‍💻 All of my projects are available at [https://www.behance.net/AnshGFX](https://www.behance.net/AnshGFX)
-
 - 💬 Ask me about **C, C++, Python**
 
 - 📫 How to reach me **chauhanansh289@gmail.com**
