@@ -72,10 +72,6 @@
 ### 🎮 **Interactive Application Development**
 - Creating engaging **game experiences** with Python and Streamlit
 - Developing **web applications** with modern frameworks
-<div align="center">
-  <img src="image.png" alt="Header"/>
-</div>
-
 - Implementing **user-centered design** principles
 
 ### 🌐 **Full-Stack Development**
