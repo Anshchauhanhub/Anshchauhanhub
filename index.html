@@ -6,12 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ansh Chauhan - AI Developer Portfolio</title>
     
-    <!-- External Libraries -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
     
-    <!-- Custom Stylesheets -->
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/chatbot.css">
@@ -20,13 +18,10 @@
 </head>
 
 <body>
-    <!-- Particles Background -->
     <div class="particles" id="particles"></div>
 
-    <!-- Menu Overlay -->
     <div class="menu-overlay" id="menuOverlay" onclick="closeMenu()"></div>
 
-    <!-- Header -->
     <header>
         <div class="container">
             <div class="header-content">
@@ -36,19 +31,16 @@
                 </div>
 
                 <div class="header-right">
-                    <!-- Desktop Navigation -->
                     <nav class="desktop-nav">
                         <a href="#projects" class="nav-link">Projects</a>
                         <a href="#about" class="nav-link">About</a>
                         <a href="#contact" class="nav-link">Contact</a>
                     </nav>
 
-                    <!-- Theme Toggle Button -->
                     <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
                         <i class="fas fa-moon"></i>
                     </button>
 
-                    <!-- Mobile Menu Toggle -->
                     <button class="menu-toggle" id="menuToggle" onclick="toggleMenu()">
                         <i class="fas fa-bars"></i>
                     </button>
@@ -57,7 +49,6 @@
         </div>
     </header>
 
-    <!-- Slide Menu -->
     <div class="slide-menu" id="slideMenu">
         <div class="menu-header">
             <h3 class="menu-title">Menu</h3>
@@ -81,35 +72,29 @@
         </nav>
     </div>
 
-    <!-- Chatbot Button -->
-<div class="chatbot-btn" onclick="toggleChatbot()">
-    <i class="fas fa-comments"></i>
-</div>
-
-<!-- Chatbot Container -->
-<div class="chatbot-container" id="chatbotContainer">
-    <div class="chatbot-header">
-        <h4><i class="fas fa-robot mr-2"></i>AI Assistant</h4>
-        <button class="chatbot-close" onclick="toggleChatbot()">
-            <i class="fas fa-times"></i>
-        </button>
+    <div class="chatbot-btn" onclick="toggleChatbot()">
+        <i class="fas fa-comments"></i>
     </div>
-    <div class="chatbot-messages" id="chatbotMessages">
-        <!-- Messages will be added here -->
-    </div>
-    <div class="chatbot-input-area">
-        <input type="text" class="chatbot-input" id="chatbotInput" placeholder="Type your message..."
-            onkeypress="handleChatKeyPress(event)">
-        <button class="chatbot-send" onclick="sendMessage()">
-            <i class="fas fa-paper-plane"></i>
-        </button>
-    </div>
-</div>
 
+    <div class="chatbot-container" id="chatbotContainer">
+        <div class="chatbot-header">
+            <h4><i class="fas fa-robot mr-2"></i>AI Assistant</h4>
+            <button class="chatbot-close" onclick="toggleChatbot()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="chatbot-messages" id="chatbotMessages">
+            </div>
+        <div class="chatbot-input-area">
+            <input type="text" class="chatbot-input" id="chatbotInput" placeholder="Type your message..."
+                onkeypress="handleChatKeyPress(event)">
+            <button class="chatbot-send" onclick="sendMessage()">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
 
-    <!-- Main Content -->
     <main>
-        <!-- Hero Section -->
         <section class="section-spacing text-center">
             <div class="container">
                 <h2 class="hero-title font-bold leading-tight">
@@ -126,7 +111,6 @@
             </div>
         </section>
 
-        <!-- Projects Section -->
         <section id="projects" class="section-spacing">
             <div class="container">
                 <h3 class="text-xl sm:text-2xl lg:text-4xl font-bold mb-6 sm:mb-8 lg:mb-12 text-center">
@@ -134,7 +118,6 @@
                     AI Projects
                 </h3>
                 <div class="responsive-grid md-2 lg-3">
-                    <!-- Project Card 1 -->
                     <div class="frost-card p-4 sm:p-6 lg:p-8">
                         <div class="relative mb-4 sm:mb-6 overflow-hidden rounded-lg">
                             <img src="https://storage.googleapis.com/a1aa/image/a289577b-2881-43d3-a097-c0ec43a22104.jpg"
@@ -145,7 +128,7 @@
                             RL Radiologist
                         </h4>
                         <p class="mb-4 sm:mb-6 text-gray-300 leading-relaxed text-xs sm:text-sm lg:text-base">
-                             Amulti-agent medical system that uses Reinforcement Learning to autonomously "fix" X-rays.
+                             A multi-agent medical system that uses Reinforcement Learning to autonomously "fix" X-rays
                              to detect 14 thoracic abnormalities (e.g., Pneumonia, Cardiomegaly) on the optimized scans.
                         </p>
                         <a href="https://huggingface.co/spaces/Ansh99/X-Rays_Radiologist" target="_blank" class="block">
@@ -155,7 +138,6 @@
                         </button>
                     </div>
 
-                    <!-- Project Card 2 -->
                     <div class="frost-card p-4 sm:p-6 lg:p-8">
                         <div class="relative mb-4 sm:mb-6 overflow-hidden rounded-lg">
                             <img src="https://storage.googleapis.com/a1aa/image/6740ad41-d22d-4b77-13ce-aa47bcba655c.jpg"
@@ -175,7 +157,6 @@
                         </button>
                     </div>
 
-                    <!-- Project Card 3 -->
                     <div class="frost-card p-4 sm:p-6 lg:p-8">
                         <div class="relative mb-4 sm:mb-6 overflow-hidden rounded-lg">
                             <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500"
@@ -197,18 +178,17 @@
                         </a>
                     </div>
 
-                    <!-- Project Card 4 -->
                     <div class="frost-card p-4 sm:p-6 lg:p-8">
                         <div class="relative mb-4 sm:mb-6 overflow-hidden rounded-lg">
-                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500"
+                            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500"
                                 alt="SpaceObject-detection" class="project-image">
                         </div>
                         <h4 class="text-base sm:text-lg lg:text-xl font-bold mb-3 sm:mb-4">
-                            <i class="fa fa-area-chart" aria-hidden="true"></i>
-                            SpaceObject-detection
+                            <i class="fa fa-satellite" aria-hidden="true"></i>
+                            SpaceObject Detection
                         </h4>
                         <p class="mb-4 sm:mb-6 text-gray-300 leading-relaxed text-xs sm:text-sm lg:text-base">
-                            Areal-time safety system for spacecraft environments to locate critical tools instantly.
+                            A real-time safety system for spacecraft environments to locate critical tools instantly.
                         </p>
                         <a href="https://github.com/Anshchauhanhub/SpaceObject-detection" target="_blank" class="block">
                             <button class="cool-button">
@@ -218,15 +198,14 @@
                         </a>
                     </div>
 
-                    <!-- Project Card 5 -->
                     <div class="frost-card p-4 sm:p-6 lg:p-8">
                         <div class="relative mb-4 sm:mb-6 overflow-hidden rounded-lg">
-                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500"
+                            <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=500"
                                 alt="Movie Recommender System" class="project-image">
                         </div>
                         <h4 class="text-base sm:text-lg lg:text-xl font-bold mb-3 sm:mb-4">
-                            <i class="fa fa-area-chart" aria-hidden="true"></i>
-                            Movie Recommender System
+                            <i class="fas fa-film" aria-hidden="true"></i>
+                            Movie Recommender
                         </h4>
                         <p class="mb-4 sm:mb-6 text-gray-300 leading-relaxed text-xs sm:text-sm lg:text-base">
                             Content-based recommendation engine for personalized movie discovery.
@@ -238,11 +217,23 @@
                             </button>
                         </a>
                     </div>
+
+                    <div class="frost-card p-4 sm:p-6 lg:p-8" style="display: flex; flex-direction: column; justify-content: center; align-items: center; border-style: dashed; border-color: var(--secondary-color);">
+                        <div class="text-center">
+                            <i class="fas fa-hammer fa-3x mb-4" style="color: var(--secondary-color);"></i>
+                            <h4 class="text-base sm:text-lg lg:text-xl font-bold mb-2" style="color: var(--secondary-color);">
+                                Working on it...
+                            </h4>
+                            <p class="text-gray-400 text-xs sm:text-sm">
+                                More AI innovations coming soon.
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
 
-        <!-- About Section -->
         <section id="about" class="section-spacing">
             <div class="container">
                 <div class="frost-card p-4 sm:p-6 lg:p-12">
@@ -295,7 +286,6 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
         <section id="contact" class="section-spacing">
             <div class="container">
                 <div class="frost-card p-4 sm:p-6 lg:p-12">
@@ -304,7 +294,6 @@
                         Connect With Me
                     </h3>
 
-                    <!-- CV Download Section -->
                     <div class="cv-preview">
                         <h4 class="text-base sm:text-lg lg:text-xl font-bold mb-4" style="color: var(--accent-color);">
                             <i class="fas fa-file-download mr-2"></i>
@@ -320,7 +309,6 @@
 
                     <div class="max-w-4xl mx-auto">
                         <div class="responsive-grid md-2">
-                            <!-- Contact Information -->
                             <div>
                                 <h4 class="text-base sm:text-lg lg:text-2xl font-bold mb-3 sm:mb-4 lg:mb-6"
                                     style="color: var(--primary-color);">
@@ -338,7 +326,6 @@
                                 </div>
                             </div>
 
-                            <!-- Social Media Links -->
                             <div>
                                 <h4 class="text-base sm:text-lg lg:text-2xl font-bold mb-3 sm:mb-4 lg:mb-6"
                                     style="color: var(--primary-color);">
@@ -374,7 +361,6 @@
                             </div>
                         </div>
 
-                        <!-- Additional Contact Info -->
                         <div class="mt-6 sm:mt-8 lg:mt-12 text-center">
                             <h4 class="text-base sm:text-lg lg:text-xl font-bold mb-4"
                                 style="color: var(--secondary-color);">
@@ -393,7 +379,6 @@
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="text-center frost-effect">
         <div class="container">
             <p class="text-xs sm:text-sm lg:text-base font-bold" style="color: var(--primary-color);">
@@ -405,7 +390,6 @@
         </div>
     </footer>
 
-    <!-- Custom Scripts -->
     <script src="assets/js/theme.js"></script>
     <script src="assets/js/chatbot.js"></script>
     <script src="assets/js/navigation.js"></script>
