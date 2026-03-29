@@ -27,10 +27,10 @@ const Contact = () => {
                             href={`${import.meta.env.BASE_URL || '/'}Ansh-CV.pdf`} 
                             target="_blank" 
                             rel="noopener noreferrer"
-                            className="cool-button group inline-flex items-center gap-4 px-10 py-5 rounded-2xl text-primary hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(52,211,153,0.3)] transition-all font-black text-lg md:text-xl uppercase tracking-widest border border-emerald-500/30"
+                            className="cool-button group inline-flex items-center justify-center gap-3 md:gap-4 px-6 md:px-10 py-4 md:py-5 rounded-2xl text-primary hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(52,211,153,0.3)] transition-all font-black text-base md:text-xl uppercase tracking-wider md:tracking-widest border border-emerald-500/30 w-full sm:w-auto"
                         >
                             Download CV
-                            <Download className="group-hover:translate-y-1 transition-transform" size={24} />
+                            <Download className="group-hover:translate-y-1 transition-transform" size={20} />
                         </a>
                     </div>
 
