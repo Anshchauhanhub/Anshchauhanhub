@@ -42,3 +42,15 @@ body {
   font-family: "Orbitron", monospace;
   letter-spacing: 1px;
 }
+
+/* Bulletproof scrollbar hider for GitHub Calendar & horizontal maps */
+.hide-scrollbar::-webkit-scrollbar,
+.github-calendar-wrapper *::-webkit-scrollbar {
+  display: none !important;
+}
+
+.hide-scrollbar,
+.github-calendar-wrapper * {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}

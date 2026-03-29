@@ -103,7 +103,7 @@ const About = () => {
                                 transition={{ duration: 0.8 }}
                                 className="w-full flex flex-col items-center"
                             >
-                                <div className="p-4 sm:p-8 rounded-2xl border border-white/10 bg-[#0d1117] shadow-2xl hover:border-emerald-500/20 transition-all duration-500 w-full max-w-4xl overflow-hidden flex justify-center">
+                                <div className="github-calendar-wrapper p-4 sm:p-8 rounded-2xl border border-white/10 bg-[#0d1117] shadow-2xl hover:border-emerald-500/20 transition-all duration-500 w-full max-w-4xl overflow-hidden flex justify-center">
                                     <GitHubCalendar 
                                         username="Anshchauhanhub" 
                                         theme={githubTheme}
