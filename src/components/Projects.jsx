@@ -177,7 +177,7 @@ const ProjectDisplay = ({ project, index }) => {
             {/* Media Area */}
             <div className="w-full md:w-1/2 h-[300px] md:h-[500px] overflow-hidden relative">
                 <img 
-                    src={project.image} 
+                    src={`${import.meta.env.BASE_URL || '/'}${project.image.replace(/^\//, '')}`}
                     alt={project.title} 
                     className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" 
                 />

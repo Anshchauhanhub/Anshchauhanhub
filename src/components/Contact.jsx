@@ -24,7 +24,7 @@ const Contact = () => {
                         </h4>
                         <p className="mb-6 text-sm sm:text-base text-slate-300">Get a detailed overview of my AI development experience and projects</p>
                         <a 
-                            href="/Ansh-CV.pdf" 
+                            href={`${import.meta.env.BASE_URL || '/'}Ansh-CV.pdf`} 
                             target="_blank" 
                             rel="noopener noreferrer"
                             className="cool-button group inline-flex items-center gap-4 px-10 py-5 rounded-2xl text-primary hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(52,211,153,0.3)] transition-all font-black text-lg md:text-xl uppercase tracking-widest border border-emerald-500/30"
