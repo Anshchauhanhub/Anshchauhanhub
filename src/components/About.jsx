@@ -1,15 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { User, Cpu, Brain, LineChart, Code } from 'lucide-react';
-import { GitHubCalendar } from 'react-github-calendar';
+
 import RadarChart from './RadarChart';
 
 const About = () => {
-    // Official GitHub Contribution Graph Colors (Authentic Look)
-    const githubTheme = {
-        light: ['#ebedf0', '#9be9a8', '#40c463', '#30a14e', '#216e39'],
-        dark: ['#161b22', '#0e4429', '#006d32', '#26a641', '#39d353'],
-    };
+
 
     return (
         <section id="about" className="py-16 sm:py-20 lg:py-24">
@@ -94,30 +90,7 @@ const About = () => {
                             </div>
                         </div>
 
-                        {/* GitHub Contribution Graph */}
-                        <div className="mt-12 flex flex-col items-center">
-                            <motion.div 
-                                initial={{ opacity: 0, scale: 0.95 }}
-                                whileInView={{ opacity: 1, scale: 1 }}
-                                viewport={{ once: true }}
-                                transition={{ duration: 0.8 }}
-                                className="w-full flex flex-col items-center"
-                            >
-                                <div className="github-calendar-wrapper p-4 sm:p-8 rounded-2xl border border-white/10 bg-[#0d1117] shadow-2xl hover:border-emerald-500/20 transition-all duration-500 w-full max-w-4xl overflow-hidden flex justify-center">
-                                    <GitHubCalendar 
-                                        username="Anshchauhanhub" 
-                                        theme={githubTheme}
-                                        colorScheme="dark"
-                                        blockSize={12}
-                                        blockMargin={4}
-                                        fontSize={13}
-                                    />
-                                </div>
-                                <p className="mt-4 text-[10px] sm:text-xs text-slate-500 uppercase tracking-[0.3em] font-bold opacity-40 text-center">
-                                    Contribution Calendar
-                                </p>
-                            </motion.div>
-                        </div>
+
                     </div>
                 </motion.div>
             </div>
