@@ -158,7 +158,7 @@ const ProjectArrow = ({ direction, onClick }) => {
     return (
         <button
             onClick={onClick}
-            className={`absolute ${isLeft ? 'left-2 md:left-8' : 'right-2 md:right-8'} top-1/2 -translate-y-1/2 z-[100] p-4 md:p-6 rounded-full border border-white/5 bg-black/40 backdrop-blur-xl text-white/50 hover:text-emerald-400 hover:border-emerald-500/50 hover:bg-emerald-500/5 transition-all group active:scale-95`}
+            className={`absolute ${isLeft ? 'left-0 md:left-8' : 'right-0 md:right-8'} top-1/2 -translate-y-1/2 z-[100] p-2 md:p-6 rounded-full border border-transparent md:border-white/5 bg-transparent md:bg-black/40 backdrop-blur-none md:backdrop-blur-xl text-white/50 hover:text-emerald-400 hover:border-emerald-500/50 hover:bg-emerald-500/5 transition-all group active:scale-95`}
         >
             {isLeft ? <ChevronLeft size={36} className="group-hover:-translate-x-1 transition-transform" /> : <ChevronRight size={36} className="group-hover:translate-x-1 transition-transform" />}
         </button>
