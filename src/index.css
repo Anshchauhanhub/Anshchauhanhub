@@ -43,14 +43,22 @@ body {
   letter-spacing: 1px;
 }
 
-/* Bulletproof scrollbar hider for GitHub Calendar & horizontal maps */
-.hide-scrollbar::-webkit-scrollbar,
-.github-calendar-wrapper *::-webkit-scrollbar {
-  display: none !important;
-}
-
-.hide-scrollbar,
-.github-calendar-wrapper * {
+/* Aggressively destroy all scrollbars inside the GitHub Calendar */
+.github-calendar-wrapper,
+.github-calendar-wrapper *,
+.react-activity-calendar,
+.react-activity-calendar * {
   -ms-overflow-style: none !important;
   scrollbar-width: none !important;
+}
+
+.github-calendar-wrapper::-webkit-scrollbar,
+.github-calendar-wrapper *::-webkit-scrollbar,
+.react-activity-calendar::-webkit-scrollbar,
+.react-activity-calendar *::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  background: transparent !important;
+  -webkit-appearance: none !important;
 }
