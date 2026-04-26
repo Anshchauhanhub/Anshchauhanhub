@@ -3,7 +3,7 @@
 </h1>
 
 <div align="center">
-  <h3>🚀 Passionate AI Scientist & Full-Stack Developer from India 🇮🇳</h3>
+  <h3>🚀 Passionate AI Scientist & ML Developer from India 🇮🇳</h3>
   <p><em>"Bridging the gap between artificial intelligence and real-world solutions"</em></p>
 </div>
 
