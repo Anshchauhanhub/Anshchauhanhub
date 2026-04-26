@@ -63,22 +63,21 @@
 
 
 ## 🎯 Current Focus Areas
+### 🔬 **AI & Generative AI Innovation**
+- **Computer Vision:** Building and optimizing models (YOLOv8, Faster R-CNN, EfficientNet) for real-world applications like medical imaging and object detection.
+- **Generative AI & LLMs:** Fine-tuning transformer architectures (QLoRA), prompt engineering, and deploying agentic workflows (LangChain, LangGraph) for dynamic AI solutions.
+- **Reinforcement Learning:** Developing RL-based agents (PPO) for adaptive decision-making in specialized domains.
 
-### 🔬 **AI Research & Development**
-- Advancing in **Natural Language Processing** through structured learning programs
-- Exploring **Computer Vision** applications in real-world scenarios
-- Building **Machine Learning** models for predictive analytics
+### 🚀 **End-to-End AI Systems**
+- **Full-Stack AI Deployment:** Integrating AI models with web frameworks (Django, FastAPI, Streamlit) and cloud platforms for scalable, production-ready applications.
+- **Vector Databases & RAG:** Leveraging Pinecone and embeddings to build retrieval-augmented generation (RAG) pipelines for context-aware AI.
+- **Edge AI:** Optimizing models for low-latency inference on edge devices, with a focus on real-time performance.
 
-### 🎮 **Interactive Application Development**
-- Creating engaging **game experiences** with Python and Streamlit
-- Developing **web applications** with modern frameworks
-- Implementing **user-centered design** principles
+### 🌐 **Open-Source & Community Leadership**
+- **Technical Mentorship:** Leading workshops and hackathons to onboard students into AI/ML and open-source contribution.
+- **Collaborative Development:** Actively contributing to AI/ML repositories and fostering innovation in FOSS communities.
 
-### 🌐 **Full-Stack Development**
-- **Backend**: Python, Django, API development
-- **Database**: SQL, NoSQL, data modeling
-- **Cloud**: AWS deployment and DevOps practices
-
+---
 ## 🤝 Let's Connect & Collaborate
 
 <div align="center">
