@@ -14,14 +14,14 @@ const projects = [
         title: "NeuroVaidya AI",
         desc: "Full-stack Ayurvedic platform bridging traditional medicine with modern Generative AI. Features a fine-tuned Medical LLM and a personalized health recommendation engine.",
         image: "/projects/neurovaidya.png",
-        link: "https://github.com/Anshchauhanhub/NeuroVaidya",
+        link: "https://neurovaidya.onrender.com/",
         icon: <Brain className="text-emerald-400" size={24} />
     },
     {
         title: "Axiom AI",
         desc: "Next-gen agentic learning platform utilizing LangGraph for goal-tracking and mastery verification through AI-generated MCQ gates and Telegram integration.",
         image: "/projects/axiom.png",
-        link: "https://github.com/Anshchauhanhub/Axiom",
+        link: "https://axiom-t3z9.onrender.com/",
         icon: <Network className="text-blue-400" size={24} />
     },
     {
