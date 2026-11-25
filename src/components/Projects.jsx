@@ -8,7 +8,7 @@ const projects = [
         title: "Axiom AI",
         desc: "Next-gen agentic learning platform utilizing LangGraph for goal-tracking and mastery verification through AI-generated MCQ gates and Telegram integration.",
         image: "/projects/axiom.png",
-        link: "https://axiom-t3z9.onrender.com/",
+        link: "https://www.exiom.live/",
         icon: <Network className="text-blue-400" size={24} />
     },
     {
