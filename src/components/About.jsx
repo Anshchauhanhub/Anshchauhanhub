@@ -1,15 +1,78 @@
-import React from 'react';
+import React, { useRef, Suspense } from 'react';
 import { motion } from 'framer-motion';
 import { User, Cpu, Brain, LineChart, Code } from 'lucide-react';
+import { Canvas, useFrame } from '@react-three/fiber';
+import { Float } from '@react-three/drei';
 
 import RadarChart from './RadarChart';
 
-const About = () => {
+// Floating wireframe 3D shape component
+const WireframeShape = ({ position, rotationSpeed = [0.2, 0.2, 0], color, floatSpeed = 1.5, children }) => {
+    const meshRef = useRef();
 
+    useFrame((state, delta) => {
+        if (meshRef.current) {
+            meshRef.current.rotation.x += rotationSpeed[0] * delta;
+            meshRef.current.rotation.y += rotationSpeed[1] * delta;
+            meshRef.current.rotation.z += rotationSpeed[2] * delta;
+        }
+    });
 
     return (
-        <section id="about" className="py-16 sm:py-20 lg:py-24">
-            <div className="container mx-auto px-4 lg:px-12">
+        <Float speed={floatSpeed} rotationIntensity={0.6} floatIntensity={1.2}>
+            <mesh ref={meshRef} position={position}>
+                {children}
+                <meshBasicMaterial color={color} wireframe transparent opacity={0.85} />
+            </mesh>
+        </Float>
+    );
+};
+
+const About = () => {
+    return (
+        <section id="about" className="relative py-16 sm:py-20 lg:py-24 overflow-hidden">
+            {/* Floating 3D Background Shapes */}
+            <div className="absolute inset-0 pointer-events-none opacity-20 z-0 overflow-hidden">
+                <Suspense fallback={null}>
+                    <Canvas
+                        camera={{ position: [0, 0, 7], fov: 50 }}
+                        style={{ pointerEvents: 'none' }}
+                        gl={{ alpha: true, antialias: true }}
+                    >
+                        {/* Left: Torus (emerald-400) */}
+                        <WireframeShape
+                            position={[-4.2, 1, -2]}
+                            rotationSpeed={[0.25, 0.35, 0.1]}
+                            color="#34d399"
+                            floatSpeed={1.8}
+                        >
+                            <torusGeometry args={[1.2, 0.35, 16, 32]} />
+                        </WireframeShape>
+
+                        {/* Right: Icosahedron (blue-400) */}
+                        <WireframeShape
+                            position={[4.2, -1.2, -1.5]}
+                            rotationSpeed={[-0.2, 0.25, 0.3]}
+                            color="#60a5fa"
+                            floatSpeed={2}
+                        >
+                            <icosahedronGeometry args={[1.1, 0]} />
+                        </WireframeShape>
+
+                        {/* Center-Back: Octahedron (emerald-400) */}
+                        <WireframeShape
+                            position={[0, 2.4, -4]}
+                            rotationSpeed={[0.15, -0.3, 0.2]}
+                            color="#34d399"
+                            floatSpeed={1.5}
+                        >
+                            <octahedronGeometry args={[1.3, 0]} />
+                        </WireframeShape>
+                    </Canvas>
+                </Suspense>
+            </div>
+
+            <div className="container mx-auto px-4 lg:px-12 relative z-10">
                 <motion.div 
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}

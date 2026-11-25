@@ -62,3 +62,26 @@ body {
   background: transparent !important;
   -webkit-appearance: none !important;
 }
+
+/* Global 3D enhancements */
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  transform-style: preserve-3d;
+}
+
+.frost-card {
+  transform-style: preserve-3d;
+  transform: translateZ(0);
+}
+
+.frost-card-3d {
+  transition: transform 0.4s cubic-bezier(0.03,0.98,0.52,0.99);
+  will-change: transform;
+}

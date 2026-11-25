@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Brain, Network, AreaChart, Satellite, Film, ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
+import { useTilt } from '../hooks/useTilt';
 
 const projects = [
     {
-        title: "RL Radiologist",
-        desc: "A multi-agent medical system that uses Reinforcement Learning to autonomously detect abnormalities in X-ray images.",
-        image: "/projects/radiologist.png",
-        link: "https://huggingface.co/spaces/Ansh99/X-Rays_Radiologist",
-        icon: <Brain className="text-emerald-400" size={24} />
+        title: "Axiom AI",
+        desc: "Next-gen agentic learning platform utilizing LangGraph for goal-tracking and mastery verification through AI-generated MCQ gates and Telegram integration.",
+        image: "/projects/axiom.png",
+        link: "https://axiom-t3z9.onrender.com/",
+        icon: <Network className="text-blue-400" size={24} />
     },
     {
         title: "NeuroVaidya AI",
@@ -18,11 +19,11 @@ const projects = [
         icon: <Brain className="text-emerald-400" size={24} />
     },
     {
-        title: "Axiom AI",
-        desc: "Next-gen agentic learning platform utilizing LangGraph for goal-tracking and mastery verification through AI-generated MCQ gates and Telegram integration.",
-        image: "/projects/axiom.png",
-        link: "https://axiom-t3z9.onrender.com/",
-        icon: <Network className="text-blue-400" size={24} />
+        title: "RL Radiologist",
+        desc: "A multi-agent medical system that uses Reinforcement Learning to autonomously detect abnormalities in X-ray images.",
+        image: "/projects/radiologist.png",
+        link: "https://huggingface.co/spaces/Ansh99/X-Rays_Radiologist",
+        icon: <Brain className="text-emerald-400" size={24} />
     },
     {
         title: "Skin-Acne Analysis",
@@ -86,7 +87,7 @@ const Projects = () => {
     };
 
     return (
-        <section id="projects" className="relative h-screen bg-black flex flex-col items-center overflow-hidden py-12 md:py-20 lg:py-16">
+        <section id="projects" className="relative min-h-[calc(100vh-6rem)] flex flex-col items-center justify-between overflow-hidden py-8 md:py-12">
             
             {/* Background Accent */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-emerald-500/5 blur-[120px] rounded-full pointer-events-none" />
@@ -166,9 +167,22 @@ const ProjectArrow = ({ direction, onClick }) => {
 };
 
 const ProjectDisplay = ({ project, index }) => {
+    const { ref, tiltStyle, glareStyle, tiltHandlers } = useTilt({
+        maxTilt: 8,
+        scale: 1.01,
+        glare: true,
+    });
+
     return (
-        <div className="bg-[#0a0a0a] flex flex-col md:flex-row gap-8 items-stretch border border-white/10 rounded-[2.5rem] shadow-[0_0_120px_rgba(0,0,0,1)] w-full max-h-[65vh] md:max-h-[62vh] lg:max-h-[60vh] overflow-y-auto md:overflow-hidden backdrop-blur-2xl group relative">
-            
+        <div 
+            ref={ref}
+            style={tiltStyle}
+            {...tiltHandlers}
+            className="bg-[#0a0a0a] flex flex-col md:flex-row gap-8 items-stretch border border-white/10 rounded-[2.5rem] shadow-[0_0_120px_rgba(0,0,0,1)] w-full max-h-[65vh] md:max-h-[62vh] lg:max-h-[60vh] overflow-y-auto md:overflow-hidden backdrop-blur-2xl group relative"
+        >
+            {/* Glare overlay */}
+            <div style={glareStyle} />
+
             {/* Index Number Background */}
             <div className="absolute top-4 right-8 text-9xl font-black text-white/[0.02] select-none font-orbitron pointer-events-none">
                 0{index + 1}
